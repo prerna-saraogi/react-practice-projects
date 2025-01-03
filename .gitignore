@@ -1,0 +1,60 @@
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files and caches
+*.tmp
+*.cache
+temp/
+debug/
+out/
+
+# Coverage directory for testing tools
+coverage/
+
+# Parcel-bundler cache (if used)
+.cache/
+
+# ESLint cache
+.eslintcache
+
+# Styled Components or CSS-in-JS debugging
+.stylelintcache
+
+# NPM package lock files (if you’re only using yarn, exclude this line)
+package-lock.json
+
+# Yarn Integrity file
+.yarn-integrity
+

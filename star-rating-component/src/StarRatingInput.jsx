@@ -34,7 +34,7 @@ export default function StarRatingInput() {
 
     return (
     <div className="container">
-        <p>How many stars would you give to our Online Code Editor?</p>
+        <p>How many stars would you give to our Service?</p>
         <div>
             {stars.map((_, index) => {
                 return (
@@ -53,7 +53,5 @@ export default function StarRatingInput() {
         </div>
         {rating > 0 && <p className="rating-msg">{messages[rating]}</p>}
     </div>
-    );
-
-    
+    );    
 }
