@@ -62,27 +62,32 @@ body {
   padding: 15px 20px;
 }
 
-.accordion-item:nth-child(5n + 1) .accordion-title {
+.accordion-item:nth-child(5n + 1) .accordion-title,
+.accordion-item:nth-child(5n + 1) .accordion-content {
   background-color: #ffedd5;
   border-left: 5px solid #fb923c;
 }
 
-.accordion-item:nth-child(5n + 2) .accordion-title {
+.accordion-item:nth-child(5n + 2) .accordion-title,
+.accordion-item:nth-child(5n + 2) .accordion-content {
   background-color: #e0e7ff;
   border-left: 5px solid #818cf8;
 }
 
-.accordion-item:nth-child(5n + 3) .accordion-title {
+.accordion-item:nth-child(5n + 3) .accordion-title,
+.accordion-item:nth-child(5n + 3) .accordion-content {
   background-color: #ede9fe;
   border-left: 5px solid #a78bfa;
 }
 
-.accordion-item:nth-child(5n + 4) .accordion-title {
+.accordion-item:nth-child(5n + 4) .accordion-title,
+.accordion-item:nth-child(5n + 4) .accordion-content {
   background-color: #fce7f3;
   border-left: 5px solid #f472b6;
 }
 
-.accordion-item:nth-child(5n + 5) .accordion-title {
+.accordion-item:nth-child(5n + 5) .accordion-title,
+.accordion-item:nth-child(5n + 5) .accordion-content {
   background-color: #f0fdf4;
   border-left: 5px solid #4ade80;
 }
