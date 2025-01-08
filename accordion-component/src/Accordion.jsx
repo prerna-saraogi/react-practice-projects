@@ -10,9 +10,7 @@ export default function Accordion({ items }) {
       {items.map((item, index) => (
         <div key={index} className="accordion-item">
           <div
-            className={`accordion-title ${
-              activeIndex === index ? "active" : ""
-            }`}
+            className={`accordion-title ${activeIndex === index ? "active" : ""}`}
             onClick={() => toggleItem(index)}
           >
             <span>{item.title}</span>

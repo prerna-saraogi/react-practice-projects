@@ -32,8 +32,6 @@ body {
   margin-bottom: 5px;
 }
 .title p {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
@@ -41,7 +39,6 @@ body {
 .accordion-item {
   margin: 20px auto;
   font-size: 14px;
-  /* font-weight: 400; */
 }
 .accordion-title {
   display: flex;
@@ -51,17 +48,10 @@ body {
   padding: 19px 16px;
   cursor: pointer;
   gap: 8px;
-  /* transition: background-color 0.3s; */
 }
-
-.accordion-item:last-child {
-  border-bottom: none;
-}
-
 .accordion-content {
-  padding: 15px 20px;
+  padding: 0px 16px 10px;
 }
-
 .accordion-item:nth-child(5n + 1) .accordion-title,
 .accordion-item:nth-child(5n + 1) .accordion-content {
   background-color: #ffedd5;
@@ -93,8 +83,23 @@ body {
 }
 .accordion-title.active {
   font-weight: bold;
+  padding: 10px 16px;
 }
-/* Hover Effects */
-/* .accordion-title:hover {
-  background-color: #f0f0f0;
-} */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .title h2 {
+    font-size: 20px;
+  }
+
+  .accordion-title {
+    padding: 10px;
+  }
+
+  .accordion-content {
+    padding: 8px 10px;
+  }
+}
