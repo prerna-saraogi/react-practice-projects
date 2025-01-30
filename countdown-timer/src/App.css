@@ -6,10 +6,67 @@
 }
 body {
   font-family: "Roboto Slab", serif;
-  height: 100vh;
   background: url("./countdown-timer-background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: #2c4a64;
+  margin-top: -100px;
+}
+
+.countdown-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.countdown-header {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 100px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+.countdown-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.countdown-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-value {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 600;
 }
